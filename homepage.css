@@ -157,18 +157,12 @@
     font-size: 1.5em;
   }
   
-  /* styles.css */
-
-/* (Existing styles from the previous CSS) */
-
-/* Additional styles for Font Awesome icons */
 .sidebar ul li a i,
 .social-icons i {
   color: #6c63ff;
   font-size: 1.5em;
 }
 
-/* Styling adjustments for social media icons in footer */
 .social-icons a {
   color: #6c63ff;
   margin: 0 10px;
@@ -179,3 +173,21 @@
 .social-icons a:hover {
   color: #ffffff;
 }
+
+.photo-gallery {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+.photo-item {
+  text-align: center;
+}
+
+.photo-item img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
