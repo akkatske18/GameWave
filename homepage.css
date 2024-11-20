@@ -283,8 +283,6 @@ footer {
   background-color: #1a1a1a;
   color: #ffffff;
   margin: 20px auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .portfolio-section h1 {
@@ -337,8 +335,6 @@ footer {
   background-color: #1a1a1a;
   color: #ffffff;
   margin: 20px auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .news-section h1 {
