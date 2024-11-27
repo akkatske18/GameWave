@@ -1,6 +1,7 @@
 /* Original Styles */
 * {
-  margin: 0;
+  margin: 7px;
+  margin-left: 7px;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
@@ -10,38 +11,6 @@ body {
   background-color: #1a1a1a;
   color: #ffffff;
   display: flex;
-}
-
-.sidebar {
-  background-color: #000000;
-  width: 80px;
-  height: 100vh;
-  padding: 50px 0;
-  text-align: center;
-  color: #6c63ff;
-}
-
-.sidebar span {
-  color: #ffffff;
-}
-
-.sidebar ul {
-  list-style: none;
-}
-
-.sidebar ul li {
-  margin: 40px 0;
-}
-
-.sidebar ul li a {
-  color: #6c63ff;
-  font-size: 1.2em;
-  text-decoration: none;
-}
-
-.sidebar ul li a:hover {
-  color: #ffffff;
-  text-decoration: underline;
 }
 
 .content {
@@ -54,6 +23,8 @@ header nav ul {
   display: flex;
   align-items: center;
   list-style: none;
+  border-radius: 20px;
+  background-color: #000000;
 }
 
 .logo-item {
@@ -223,4 +194,27 @@ footer {
   transform: scale(1.05);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.video {
+  flex: 1 1 calc(25% - 10px);
+  max-width: calc(25% - 10px);
+  background-color: rgba(204, 204, 204, 0.7);
+  border-radius: 5px;
+  overflow: hidden;
+  animation: fadeIn 1s forwards;
+  position: relative; /* Position for caption placement */
+}
+
+.video video {
+  width: 100%;
+  height: auto;
 }
