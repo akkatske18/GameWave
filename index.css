@@ -8,7 +8,11 @@
 }
 
 body {
-  background-color: #1a1a1a;
+  background-image: url("Image/bgweb.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
   color: #ffffff;
   display: flex;
 }
@@ -24,7 +28,7 @@ header nav ul {
   align-items: center;
   list-style: none;
   border-radius: 20px;
-  background-color: #000000;
+  background-color: #030318;
 }
 
 .logo-item {
@@ -108,8 +112,9 @@ header nav ul li a:hover {
 }
 
 footer {
-  background-color: #000000;
+  background-color: #030318;
   padding: 50px 30px;
+  border-radius: 20px;
 }
 
 .footer-content {
@@ -122,6 +127,7 @@ footer {
 .footer-center ul li,
 .footer-right p {
   color: #6c63ff;
+  text-decoration: none;
 }
 
 .footer-left,
@@ -148,7 +154,6 @@ footer {
   font-size: 1.5em;
 }
 
-.sidebar ul li a i,
 .social-icons i {
   color: #6c63ff;
   font-size: 1.5em;
@@ -196,25 +201,28 @@ footer {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
+.photo-container,
+.photo-container2 {
+  text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.video {
-  flex: 1 1 calc(25% - 10px);
-  max-width: calc(25% - 10px);
-  background-color: rgba(204, 204, 204, 0.7);
-  border-radius: 5px;
-  overflow: hidden;
-  animation: fadeIn 1s forwards;
-  position: relative; /* Position for caption placement */
+.photo {
+    flex: 1 1 calc(23% - 10px);
+    max-width: calc(23% - 10px);
+    border-radius: 5px;
+    overflow: hidden;
+    animation: fadeIn 1s forwards;
 }
 
-.video video {
-  width: 100%;
-  height: auto;
+.photo img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.photo img:hover {
+    transform: scale(1.05);
 }

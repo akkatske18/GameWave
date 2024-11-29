@@ -2,7 +2,8 @@
 .news-section {
     padding: 40px;
     text-align: center;
-    background-color: #1a1a1a;
+    background-color: #030318;
+    border-radius: 15px;
     color: #ffffff;
     margin: 20px auto;
   }
@@ -25,7 +26,7 @@
   }
   
   .news-item {
-    background-color: #000000;
+    background-color: #140c2b;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
