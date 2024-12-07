@@ -59,6 +59,10 @@
     font-size: 1em;
     transition: background-color 0.3s ease;
   }
+  .news-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.8);
+  }
   
   .news-item .button:hover {
     background-color: #ffffff;

@@ -134,20 +134,33 @@ footer {
 .footer-center,
 .footer-right {
   width: 30%;
+  text-decoration: none;
 }
 
 .footer-center ul {
   list-style: none;
+  text-decoration: none;
 }
 
 .footer-center ul li {
   margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .footer-center ul li a:hover {
   color: #ffffff;
-  text-decoration: underline;
 }
+
+/* Add this to remove underline from links */
+footer a {
+  text-decoration: none;
+  color: #6c63ff;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
 
 .social-icons i {
   margin: 0 5px;
@@ -229,10 +242,8 @@ footer {
 
 /* Gaming Frame Section */
 .gaming-frame {
-  background: linear-gradient(145deg, #244077, #1b2c54);
   border-radius: 20px;
   padding: 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   margin: 20px auto;
   max-width: 1200px;
   display: flex;
@@ -257,6 +268,7 @@ footer {
 .text-section h1 {
   font-size: 2rem;
   font-weight: bold;
+  margin-left: 50px;
   margin-bottom: 15px;
 }
 
@@ -265,6 +277,7 @@ footer {
   line-height: 1.5;
   color: #c7d5e0;
   margin: 0;
+  margin-left: 50px;
 }
 
 .video-section {
@@ -274,7 +287,7 @@ footer {
   align-items: center;
 }
 
-.video-section video {
+.video-section img {
   width: 100%;
   max-width: 300px;
   border-radius: 15px;
@@ -283,7 +296,8 @@ footer {
 }
 /* Trending Section */
 .trending-section {
-  background-color: #1b2838;
+  background-color: #211f52;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   padding: 20px;
   color: #c7d5e0;
   border-radius: 10px;
@@ -300,7 +314,7 @@ footer {
 
 .trending-list {
   flex: 2;
-  background-color: #16222d;
+  background-color: #161435;
   border-radius: 10px;
   padding: 15px;
   overflow-y: auto;
@@ -318,7 +332,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
-  border-bottom: 1px solid #2e3a4a;
+  border-bottom: 1px solid #110424;
 }
 
 .trending-list li:last-child {
@@ -362,7 +376,7 @@ footer {
 
 .trending-details {
   flex: 1;
-  background-color: #16222d;
+  background-color: #161435;
   border-radius: 10px;
   padding: 15px;
   display: flex;
@@ -389,6 +403,72 @@ footer {
 
 .details-images img {
   width: 100%;
+  border-radius: 5px;
+  border: 1px solid #2e3a4a;
+}
+
+/* News Section */
+.Tournament-section {
+  background-color: #211f52;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  color: #c7d5e0;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Tournament-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Tournament-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #161435;
+  padding: 15px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.Tournament-item:hover {
+  background-color: #334562;
+}
+
+.Tournament-content {
+  flex: 2;
+  padding-right: 10px;
+}
+
+.Tournament-content h3 {
+  font-size: 1rem;
+  margin-left: 20px;
+  color: #ffffff;
+}
+
+.Tournament-content .Tournament-tag {
+  font-size: 0.8rem;
+  margin-left: 20px;
+  color: #89c4f4;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.Tournament-image {
+  flex: 1;
+}
+
+.Tournament-image img {
+  border-radius: 15px;
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
   border-radius: 5px;
   border: 1px solid #2e3a4a;
 }
