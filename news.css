@@ -2,66 +2,98 @@
 .news-section {
   max-width: 1200px;
   margin: 48px auto;
-  padding: 0 24px;
+  padding: 0 20px;
   text-align: center;
 }
 
 .news-section h1 {
   font-size: 2rem;
-  font-weight: 700;
-  color: #e6edf3;
+  font-weight: 800;
+  color: #ffffff;
   margin-bottom: 12px;
+  text-shadow: 0 0 30px rgba(139, 92, 246, 0.2);
 }
 
 .news-section > p {
   font-size: 15px;
-  color: #8b949e;
+  color: #8b8b8b;
   margin-bottom: 32px;
 }
 
 .news-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
 }
 
 .news-item {
-  background-color: #161b22;
-  border: 1px solid #30363d;
+  background: linear-gradient(145deg, #12121a, #1a1a2e);
+  border: 1px solid rgba(139, 92, 246, 0.1);
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 14px;
   text-align: center;
-  transition: border-color 0.2s ease, transform 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .news-item:hover {
   border-color: #7c3aed;
-  transform: translateY(-4px);
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
 }
 
 .news-item img {
   width: 100%;
-  max-width: 220px;
-  border-radius: 8px;
+  max-width: 200px;
+  border-radius: 10px;
   margin-bottom: 14px;
-  border: 1px solid #30363d;
+  border: 1px solid rgba(139, 92, 246, 0.1);
 }
 
 .news-item h3 {
   font-size: 15px;
   font-weight: 600;
-  color: #e6edf3;
+  color: #e0e0e0;
   margin-bottom: 8px;
 }
 
 .news-item p {
   font-size: 13px;
-  color: #8b949e;
+  color: #6b6b6b;
   margin-bottom: 16px;
   line-height: 1.5;
 }
 
 .news-item .button {
   font-size: 13px;
-  padding: 8px 18px;
+  padding: 8px 20px;
+}
+
+@media (max-width: 768px) {
+  .news-section {
+    margin: 32px auto;
+    padding: 0 16px;
+  }
+
+  .news-section h1 {
+    font-size: 1.6rem;
+  }
+
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .news-item {
+    padding: 16px;
+  }
+
+  .news-item img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
 }

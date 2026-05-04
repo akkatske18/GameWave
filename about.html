@@ -12,7 +12,10 @@
   <div class="content">
     <header>
       <nav>
-        <ul>
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </div>
+        <ul id="navMenu">
           <li class="logo-item"><img src="Image/gamewave logo.png" alt="GameWave Logo" class="logo"></li>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About us</a></li>
@@ -20,6 +23,7 @@
           <li><a href="news.html">News</a></li>
           <li><a href="contact.html" class="contact-btn">Contact us</a></li>
         </ul>
+        <div class="nav-overlay" id="navOverlay" onclick="toggleMenu()"></div>
       </nav>
     </header>
 
@@ -76,5 +80,11 @@
       </div>
     </footer>
   </div>
+  <script>
+    function toggleMenu() {
+      document.getElementById('navMenu').classList.toggle('active');
+      document.getElementById('navOverlay').classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
